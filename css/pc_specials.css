@@ -13,20 +13,52 @@
 
 /* Page Body Styles */
 
-
+body {
+   margin-left: auto;
+   margin-right:auto;
+   width: 95%;
+   max-width: 960px;
+   min-width: 640px;
+}
 
 /* Image Styles */
 
-
+img {
+   display:block;
+   width: 100%;
+}
 
 /* Horizontal Navigation Styles */
 
+body > header > nav.horizontal li {
+   width: 16.66%;
+}
 
+nav.horizontal li {
+   display: block;
+   float: left;
+}
+
+nav.horizontal a {
+   display:block;
+}
 
 /* Row Styles */
 
+div.newRow {
+   clear:both;
+   width: 100%;
+}
 
+div.newRow::after {
+   clear:both;
+   content: "";
+   display: table;
+}
 
+div[class^="col-"] {
+   float: left;
+}
 
 /* Column Styles */
 
